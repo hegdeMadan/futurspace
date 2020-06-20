@@ -3,6 +3,9 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import CommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import AntIcons from 'react-native-vector-icons/AntDesign'
 import FeatherIcons from 'react-native-vector-icons/Feather'
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
+import EvilIcons from 'react-native-vector-icons/EvilIcons'
+import IonicIcons from 'react-native-vector-icons/Ionicons'
 import { moderateScale } from 'react-native-size-matters'
 import { sizes, colors } from '../theme'
 
@@ -12,8 +15,8 @@ type IconPropTypes = {
 
 export const HomeIcon = (props: IconPropTypes) => {
   return (
-    <CommunityIcons
-      name={props.focused ? "home-variant" : 'home-variant-outline'}
+    <FeatherIcons
+      name='home'
       size={moderateScale(sizes.tabIcon)}
       color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
@@ -23,8 +26,8 @@ export const HomeIcon = (props: IconPropTypes) => {
 
 export const MessagesIcon = (props: IconPropTypes) => {
   return (
-    <CommunityIcons
-      name={props.focused ? "message-text" : 'message-text-outline'}
+    <AntIcons
+      name='message1'
       size={moderateScale(sizes.tabIcon)}
       color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
@@ -34,8 +37,8 @@ export const MessagesIcon = (props: IconPropTypes) => {
 
 export const FriendsIcon = (props: IconPropTypes) => {
   return (
-    <MaterialIcons
-      name={props.focused ? "people" : 'people-outline'}
+    <SimpleLineIcons
+      name='people'
       size={moderateScale(sizes.tabIcon)}
       color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
@@ -44,8 +47,8 @@ export const FriendsIcon = (props: IconPropTypes) => {
 
 export const NotficationIcon = (props: IconPropTypes) => {
   return (
-    <MaterialIcons
-      name={props.focused ? "notifications" : 'notifications-none'}
+    <FeatherIcons
+      name='bell'
       size={moderateScale(sizes.tabIcon)}
       color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
@@ -54,8 +57,8 @@ export const NotficationIcon = (props: IconPropTypes) => {
 
 export const CreateIcon = (props: IconPropTypes) => {
   return (
-    <MaterialIcons
-      name={props.focused ? "add-circle" : 'add-circle-outline'}
+    <AntIcons
+      name='pluscircleo'
       size={moderateScale(sizes.tabIcon)}
       color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
