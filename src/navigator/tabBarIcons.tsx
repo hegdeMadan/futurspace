@@ -1,111 +1,66 @@
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import CommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import AntIcons from 'react-native-vector-icons/AntDesign'
+import FeatherIcons from 'react-native-vector-icons/Feather'
 import { moderateScale } from 'react-native-size-matters'
 import { sizes, colors } from '../theme'
 
-export const HomeIcon = (props) => {
-  if (props.focused) {
-    return (
-      <CommunityIcons
-        name="home-variant"
-        size={moderateScale(sizes.tabIcon)}
-        color={colors.tabIconFocused}
-      />
-    )
-  }
+type IconPropTypes = {
+  focused: boolean;
+}
 
+export const HomeIcon = (props: IconPropTypes) => {
   return (
     <CommunityIcons
-      name="home-variant-outline"
+      name={props.focused ? "home-variant" : 'home-variant-outline'}
       size={moderateScale(sizes.tabIcon)}
-      color={colors.tabIconUnFocused}
+      color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
   )
-}
+} 
 
 
-export const MessagesIcon = props => {
-  if (props.focused) {
-    return (
-      <CommunityIcons
-        name="message-text"
-        size={moderateScale(sizes.tabIcon)}
-        color={colors.tabIconFocused}
-      />
-    )
-  }
-
+export const MessagesIcon = (props: IconPropTypes) => {
   return (
     <CommunityIcons
-      name="message-text-outline"
+      name={props.focused ? "message-text" : 'message-text-outline'}
       size={moderateScale(sizes.tabIcon)}
-      color={colors.tabIconUnFocused}
+      color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
   )
 }
 
 
-export const FriendsIcon = props => {
-  if (props.focused) {
-    return (
-      <MaterialIcons
-        name="people"
-        size={moderateScale(sizes.tabIcon)}
-        color={colors.tabIconFocused}
-      />
-    )
-  }
-
+export const FriendsIcon = (props: IconPropTypes) => {
   return (
     <MaterialIcons
-      name="people-outline"
+      name={props.focused ? "people" : 'people-outline'}
       size={moderateScale(sizes.tabIcon)}
-      color={colors.tabIconUnFocused}
+      color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
   )
 }
 
-export const NotficationIcon = props => {
-  if (props.focused) {
-    return (
-      <MaterialIcons
-        name="notifications"
-        size={moderateScale(sizes.tabIcon)}
-        color={colors.tabIconFocused}
-      />
-    )
-  }
-
+export const NotficationIcon = (props: IconPropTypes) => {
   return (
     <MaterialIcons
-      name="notifications-none"
+      name={props.focused ? "notifications" : 'notifications-none'}
       size={moderateScale(sizes.tabIcon)}
-      color={colors.tabIconUnFocused}
+      color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
   )
 }
 
-export const CreateIcon = props => {
-  if (props.focused) {
-    return (
-      <MaterialIcons
-        name="add-circle"
-        size={moderateScale(sizes.tabIcon)}
-        color={colors.tabIconFocused}
-      />
-    )
-  }
-
+export const CreateIcon = (props: IconPropTypes) => {
   return (
     <MaterialIcons
-      name="add-circle-outline"
+      name={props.focused ? "add-circle" : 'add-circle-outline'}
       size={moderateScale(sizes.tabIcon)}
-      color={colors.tabIconUnFocused}
+      color={props.focused ? colors.tabIconFocused : colors.tabIcon}
     />
   )
 }
-
 
 export const ProfileIcon = props => {
   return (

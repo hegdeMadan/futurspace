@@ -15,7 +15,7 @@ export const colors = {
   card: '#fff',
   blackOverlay: 'rgba(0, 0, 0, 0.9)',
   tabIconFocused: '#00acee',
-  tabIconUnFocused: '#555'
+  tabIcon: '#555'
 }
 
 export const borders = {
