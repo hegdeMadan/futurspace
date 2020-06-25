@@ -8,6 +8,7 @@ export const Inbox = () => {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#fff'
       }}>
       <Text> This is Inbox! </Text>
     </View>

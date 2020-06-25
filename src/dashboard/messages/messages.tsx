@@ -9,6 +9,7 @@ export const Messages = ({ navigation }) => {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#fff'
       }}>
       <Text> Welcome to Messages! </Text>
       <Button

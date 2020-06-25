@@ -1,11 +1,11 @@
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
-import CommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import AntIcons from 'react-native-vector-icons/AntDesign'
 import FeatherIcons from 'react-native-vector-icons/Feather'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
-import EvilIcons from 'react-native-vector-icons/EvilIcons'
-import IonicIcons from 'react-native-vector-icons/Ionicons'
+// import CommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+// import EvilIcons from 'react-native-vector-icons/EvilIcons'
+// import IonicIcons from 'react-native-vector-icons/Ionicons'
 import { moderateScale } from 'react-native-size-matters'
 import { sizes, colors } from '../theme'
 
@@ -23,7 +23,6 @@ export const HomeIcon = (props: IconPropTypes) => {
   )
 } 
 
-
 export const MessagesIcon = (props: IconPropTypes) => {
   return (
     <AntIcons
@@ -33,7 +32,6 @@ export const MessagesIcon = (props: IconPropTypes) => {
     />
   )
 }
-
 
 export const FriendsIcon = (props: IconPropTypes) => {
   return (
@@ -65,6 +63,7 @@ export const CreateIcon = (props: IconPropTypes) => {
   )
 }
 
+// not used
 export const ProfileIcon = props => {
   return (
     <MaterialIcons

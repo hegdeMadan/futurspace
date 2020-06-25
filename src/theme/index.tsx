@@ -15,7 +15,7 @@ export const colors = {
   card: '#fff',
   blackOverlay: 'rgba(0, 0, 0, 0.9)',
   tabIconFocused: '#00acee',
-  tabIcon: '#000'
+  tabIcon: '#555'
 }
 
 export const borders = {
@@ -97,7 +97,7 @@ export const spaces = {
 }
 
 export const sizes = {
-  tabIcon: 22,
+  tabIcon: 24,
   addStoryIcon: 34,
   label: 16,
   smallLabel: 11,
